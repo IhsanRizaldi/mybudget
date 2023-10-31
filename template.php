@@ -1,9 +1,7 @@
 <?php
 session_start();
-include 'koneksi.php';
-$db = new Database();
 
-class Template extends Database{
+class Template{
     public function __construct() {
         if(!isset($_SESSION['nama'])) {
             header('Location:login.php');
